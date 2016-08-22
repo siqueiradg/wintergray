@@ -8,6 +8,20 @@ strong {
 .both{
     clear: both;
 }
+a:link, a:visited{
+    color: #0074ad;
+    transition: all 0.4s ease-out;
+}
+a:hover{
+    color: #039be5;
+    transition: all 0.4s ease-out;
+}
+ul.side-nav a:link, ul.side-nav a:visited{
+    color: #333332;
+}
+#sidenav-overlay{
+    background-color: rgba(0,0,0,0.9);
+}
 /* WordPress Core
 -------------------------------------------------------------- */
 .alignnone {
@@ -153,7 +167,7 @@ a img.aligncenter {
 }
 @media (min-width: 450px) {
     .post-home h2{
-        font-size: 22px;
+        font-size: 18px;
     }
     h2.titulo-post{
         font-size: 28px;
