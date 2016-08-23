@@ -223,7 +223,7 @@ a img.aligncenter {
     line-height: 1.5;
     text-align: justify;
 }
-.post-home a:link{
+.post-home a:link, .post-home a:visited{
     color:#333332;
 }
 section#trabalhos img{

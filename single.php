@@ -11,7 +11,7 @@
                     
                     <div class="info-post">
                         <span class="col s12 m3 l3" style="padding:0;"><strong>Data:</strong> 12/02/2018</span>
-                        <span class="col s12 m9 l9" style="padding:0;"><strong>Autor:</strong> Douglas Siqueira</span>
+                        <span class="col s12 m9 l9" style="padding:0;"><strong>Autor:</strong> <?php the_author(); ?></span>
                         <div style="clear:both;"></div>
                     </div>
                     <div class="conteudo-post">
@@ -47,45 +47,20 @@
         </div>
     </article>
 
-<section>
-						<h3 class="leia-tambem center">
-							Leia Também
-						</h3>
-						<div class="container">
-							<div class="row">
-                                <div class="col s12 m6 l4">
-                                    <div class="relacionados">
-                                        <a href="#"><img src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg" class="responsive-img"></a>
-                                        <div class="card-content">
-                                            <span class="card-title"><a href="#" class="title-post-index">Como configurar um ambiente de desenvolvimento java...</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m6 l4">
-                                    <div class="relacionados">
-                                        <a href="#"><img src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg" class="responsive-img"></a>
-                                        <div class="card-content">
-                                            <span class="card-title"><a href="#" class="title-post-index">Como configurar um ambiente de desenvolvimento java...</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col s12 m6 l4">
-                                    <div class="relacionados">
-                                        <a href="#"><img src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg" class="responsive-img"></a>
-                                        <div class="card-content">
-                                            <span class="card-title"><a href="#" class="title-post-index">Como configurar um ambiente de desenvolvimento java...</a></span>
-                                        </div>
-                                    </div>
-                                </div>	
-							</div>
-						</div>
-	</section>
+    <section>
+        <h3 class="leia-tambem center">Leia Também</h3>
+        <div class="container">
+            <div class="row">
+                <?php echo popularPosts(); ?>
+            </div>
+        </div>
+    </section>
 
     <section>
 		<div class="container">
             <h3 class="leia-tambem center">Deixe um Comentário</h3>
             <div class="postagem">
-
+                <?php comments_template(); ?>
             </div>
         </div>
 	</section>
