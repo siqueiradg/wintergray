@@ -10,7 +10,7 @@
                     </div>
                     
                     <div class="info-post">
-                        <span class="col s12 m3 l3" style="padding:0;"><strong>Data:</strong> 12/02/2018</span>
+                        <span class="col s12 m3 l3" style="padding:0;"><strong>Data:</strong> <?php the_date(); ?></span>
                         <span class="col s12 m9 l9" style="padding:0;"><strong>Autor:</strong> <?php the_author(); ?></span>
                         <div style="clear:both;"></div>
                     </div>

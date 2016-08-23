@@ -49,9 +49,10 @@
 	//LIMITAR OS CARACTERES DO THE_EXCERPT() NO WORDPRESS
 	function excerpt($limit) {
 	    $excerpt = explode(' ', get_the_excerpt(), $limit);
+		$link = get_the_permalink();
 	    if (count($excerpt)>=$limit) {
 	        array_pop($excerpt);
-	        $excerpt = implode(" ",$excerpt).'...';
+	        $excerpt = implode(" ",$excerpt).'...<a href="'.$link.'" title="Leia mais">Leia mais</a>';
 	    }else{
 	        $excerpt = implode(" ",$excerpt);
 	    }
