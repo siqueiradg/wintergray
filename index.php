@@ -33,7 +33,7 @@
                     <span><i class="fa fa-code" aria-hidden="true"></i> Últimos trabalhos</span>
                 </h2>
                 <?php 
-                    $videosArgs = array( 'post_type' => 'trabalhos', 'posts_per_page' => 3);                                           
+                    $videosArgs = array( 'post_type' => 'trabalhos', 'posts_per_page' => 4);                                           
                     $postArgs = new WP_Query( $videosArgs ); 
                 ?>
 

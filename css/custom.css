@@ -422,6 +422,28 @@ h2.titulo-post-category{
 .pagination li.active{
     background-color: #6d6d6d;
 }
+span.page-numbers.current{
+	display: inline-block;
+  	font-size: 1.2rem;
+  	padding: 0 10px;
+  	line-height: 30px;
+  	border-radius: 2px;
+  	text-align: center;
+  	color: #fff;
+	background-color: #616161;
+}
+a.page-numbers{
+	display: inline-block;
+  	font-size: 1.2rem;
+  	padding: 0 10px;
+  	line-height: 30px;
+  	border-radius: 2px;
+  	text-align: center;
+  	
+}
+a.page-numbers:active {
+  background-color: #616161;
+}
 /*WORKS*/
 .collection{
     margin: 15px 0;
