@@ -59,7 +59,6 @@
 
     <section>
 		<div class="container">
-            <h3 class="leia-tambem center">Deixe um Comentário</h3>
             <div class="postagem">
                 <?php comments_template(); ?>
             </div>
