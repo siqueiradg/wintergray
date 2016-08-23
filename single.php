@@ -25,7 +25,7 @@
 								    <?php the_tags( '<span class="chip" style="margin: 2px 5px;">', '</span> <span class="chip" style="margin: 2px 5px;">', '</span>' ); ?>
                                 </span>
 								</div>
-								<!-- BOTOES SOCIAIS DO POST -->
+								<!-- BOTOES SOCIAIS DO POST 
 								<div class="col s12 m6 l6" style="text-align: right; padding: 10px 0;">
 								<span class="entry-social">
 									<a href="http://www.facebook.com/share.php?u=<?php the_permalink(); ?>&title=<?php the_title();?>" onclick="window.open('http://www.facebook.com/share.php?u=<?php the_permalink(); ?>', 'newwindow', 'width=550, height=300'); return false;"><span class="social-buttons facebook"><i class="fa fa-facebook fa-2"></i></span></a>
@@ -37,6 +37,7 @@
 									<a href="http://pinterest.com/pin/create/bookmarklet/?media=<?php miniatura(); ?>&url=<?php the_permalink(); ?>&is_video=false&description=<?php the_title();?>" onclick="window.open('http://pinterest.com/pin/create/bookmarklet/?media=<?php miniatura(); ?>&url=<?php the_permalink(); ?>&is_video=false&description=<?php the_title();?>', 'newwindow', 'width=550, height=300'); return false;"><span class="social-buttons pinterest"><i class="fa fa-pinterest fa-2"></i></span></a>
 								</span>
 								</div>
+                                -->
 							</span>
                             <div style="clear:both;"></div>
 					</div>
