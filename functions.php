@@ -131,7 +131,7 @@
                 'has_archive' => true,
                 'hierarchical' => false,
                 'menu_position' => 5,    
-                'supports' => array('title','editor','thumbnail','custom-fields', 'revisions', 'meta-boxes')
+                'supports' => array('title','editor','thumbnail','custom-fields', 'excerpt','revisions', 'meta-boxes')
             );
         register_post_type( 'trabalhos' , $args );
         flush_rewrite_rules();

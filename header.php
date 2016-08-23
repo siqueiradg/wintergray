@@ -13,6 +13,8 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/custom.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/lightbox.min.css">
+
     <?php wp_head(); ?>
 </head>
 <body>

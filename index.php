@@ -23,6 +23,7 @@
              </a>
         </div>
     </section>
+   
     
 
     <section id="trabalhos">
@@ -31,26 +32,21 @@
                 <h2 class="section-title">
                     <span><i class="fa fa-code" aria-hidden="true"></i> Últimos trabalhos</span>
                 </h2>
+                <?php 
+                    $videosArgs = array( 'post_type' => 'trabalhos', 'posts_per_page' => 3);                                           
+                    $postArgs = new WP_Query( $videosArgs ); 
+                ?>
+
+                <?php while ( $postArgs->have_posts() ) : $postArgs->the_post();?>
+
                 <div class="col s12 l3 m3">
                     <div class="post-home">
-                        <a href="#" title="Trabalho 1"><img class="responsive-img" src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg"></a>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><img class="responsive-img" src="<?php miniatura(); ?>" alt="<?php the_title(); ?>"></a>
                     </div>
                 </div>
-                <div class="col s12 l3 m3">
-                    <div class="post-home">
-                        <img class="responsive-img" src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg">
-                    </div>
-                </div>
-                <div class="col s12 l3 m3">
-                    <div class="post-home">
-                        <img class="responsive-img" src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg">
-                    </div>
-                </div>
-                <div class="col s12 l3 m3">
-                    <div class="post-home">
-                        <img class="responsive-img" src="http://emerald.sekizgen.net/wp-content/uploads/2015/07/emerald-98-1024x683.jpg">
-                    </div>
-                </div>
+
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
         <div class="row center">

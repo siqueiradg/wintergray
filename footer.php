@@ -36,6 +36,7 @@
         });
     </script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/materialize.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/lightbox.min.js"></script>
 </body>
 
 </html>

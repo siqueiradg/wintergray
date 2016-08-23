@@ -312,7 +312,10 @@ h2.titulo-post{
     font-weight: bold;
     font-size: 18px;
 }
-
+.card-action a{
+    position: relative;
+    display: inline-block;
+}
 span.entry-post-footer{
 	padding: 10px 0;
 }
