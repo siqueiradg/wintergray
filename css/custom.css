@@ -352,9 +352,12 @@ span.googleplus{
 	padding: 8px 8px;
 	background: #d34836;
 }
-h3.leia-tambem, h3.comment-reply-title{
+h3.leia-tambem{
 	font-size: 1.3em;
 	text-transform: uppercase;
+}
+h3.comment-reply-title{
+	display: none;
 }
 .relacionados{
     margin-bottom: 15px;

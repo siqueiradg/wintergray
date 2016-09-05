@@ -103,6 +103,11 @@
 
 
     add_action('init', 'type_post_trabalhos');
+
+function jptweak_remove_share() {
+	remove_filter( 'the_excerpt', 'sharing_display',19 );
+}
+add_action( 'loop_start', 'jptweak_remove_share' );	
  
  
  
